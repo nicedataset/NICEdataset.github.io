@@ -18,13 +18,40 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    border-bottom:1px solid #d3d3d3;
+    font-size: 16px;
+}
+
 .header {
     width: 75%;
-    margin: auto;
+    margin-left: 175px;
+}
+
+.sidenav {
+    width: 140px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
 }
 
 .main {
     width: 75%;
-    margin: auto;
+    margin-left: 175px;
     line-height: 1.5;
 }
