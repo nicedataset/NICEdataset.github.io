@@ -13,15 +13,16 @@ h2 {
 }
 
 .header {
+    top: 0;
+    width: 100%;
     color: #ffffff;
     background-color: #87cefa;
-    width: 80%;
-    margin: auto;
+    text-align: center;
 }
 
 .main {
     color: #494e52;
-    width: 90%;
+    width: 75%;
     margin: auto;
     line-height: 1.5;
 }
