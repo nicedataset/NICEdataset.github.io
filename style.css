@@ -1,8 +1,5 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #494e52;
-    width: 80%;
-    margin: auto;
 }
 
 h1 {
@@ -15,7 +12,15 @@ h2 {
     font-size: 18px;
 }
 
+.header {
+    color: #ffffff;
+    background-color: #87cefa;
+    width: 80%;
+    margin: auto;
+}
+
 .main {
+    color: #494e52;
     width: 90%;
     margin: auto;
     line-height: 1.5;
