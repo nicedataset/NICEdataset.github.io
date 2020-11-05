@@ -1,27 +1,29 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #494e52;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 50px;
+    margin-bottom: 0px;
 }
 
 h2 {
+    font-size: 22px;
+}
+
+h3 {
     border-bottom:1px solid #d3d3d3;
     padding-top: 20px;
     font-size: 18px;
 }
 
 .header {
-    top: 0;
-    width: 100%;
-    color: #ffffff;
-    background-color: #87cefa;
-    text-align: center;
+    width: 75%;
+    margin: auto;
 }
 
 .main {
-    color: #494e52;
     width: 75%;
     margin: auto;
     line-height: 1.5;
