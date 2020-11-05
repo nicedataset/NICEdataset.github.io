@@ -1,9 +1,13 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 80%;
-    text-align: center
+    margin: auto
 }
 
 h1 {
     font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
 }
