@@ -13,13 +13,13 @@ h2 {
 }
 
 h3 {
-    border-bottom:1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
     padding-top: 20px;
     font-size: 18px;
 }
 
 h4 {
-    border-bottom:1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -27,6 +27,10 @@ h4 {
 .header {
     width: 75%;
     margin-left: 175px;
+}
+
+.header p {
+    font-size: 14px;
 }
 
 .sidenav {
@@ -55,4 +59,17 @@ h4 {
     width: 75%;
     margin-left: 175px;
     line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2196F3;
+    border-radius: 4px;
 }
