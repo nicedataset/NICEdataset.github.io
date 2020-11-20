@@ -25,21 +25,20 @@ h4 {
 }
 
 .topnav {
-    background-color: #f2f2f2;
+    background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid gray;
 }
 
 .topnav a {
     float: left;
-    color: #494e52;
+    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
   
 .topnav-right a:hover {
@@ -48,6 +47,7 @@ h4 {
 }
 
 .topnav-right a.active {
+    background-color: #2196F3;
     font-weight: bold;
 }
 
