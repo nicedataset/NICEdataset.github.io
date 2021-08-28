@@ -72,11 +72,22 @@
         </p>
       
          <p>
-          Setting I:
+          Setting I: We define NICE-Setting I as text generation for an image. Formally, 
+           the generation task as follows: given an image I, and N comments C1, ..., Cn.
+           Systems aim to generate the comment Ck, where k is from 1 to N using the current state
+           information S{I, C1,...,Ck-1}$. The state information contains input image feature
+           I$ and the comments history (C_1, ..., Ck-1).
          </p>
       
          <p>
-          Setting II:
+          Setting II: We define the NICE-Setting II task as generating comments in response to an image, similar to a 
+           dialog response in a social conversation setting in order to maximize user engagement and eventually form 
+           long-term, emotional connections with users. We formalize the generation task as follows: each sample of 
+           this dataset has an image I, a comment topic H of the whole dialogue, and N comments 
+           C1, ..., Cn with corresponding thread affect distribution features A1, ..., An. Systems aim to 
+           generate the comment Ck using the current state information {I, H, C1,...,Ck-1|Ak},
+           which contains the input image features $\mI_{image}$, comment topic H, and the comments history 
+           (C_1, ..., Ck-1), and is conditioned on the affect feature Ak.
          </p>
       <h3 id="Publications">Publications</h3>
         <p>
