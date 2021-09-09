@@ -50,7 +50,20 @@
           than 5 corresponding comments in each thread, and no more than 6 different dialogue threads 
           for the same image. We also filter out image-comments pairs that do not have affect
           features or dialogue topics from dialogue thread. Finally, we have 6,550,526 training samples, 100,000 validation samples,
-          and 70,000 testing samples.
+          and 70,000 testing samples. We also had human labelers annotate a large set (over 28,000) of images and
+          comments. As a single image can have multiple comment threads we randomly selected one comment thread for each image per HIT.
+          In total, 28,392 image and comment samples were labeled.
+        </p>
+      
+        <p>
+          <b>Human annotation subset: </b> We also ask human labelers to annotate a large set (over 28,000) of images and
+          comments. This subset is provided to users for human evaluation.
+          As a single image can have multiple comment threads we randomly selected one comment thread for each image per HIT.
+          In total, 28,392 image and comment samples were labeled. Each sample in the subset has human annotations including the
+          human rates on how socially appropriate, empathetic, emotional, engaging and relevant to the image
+          the comments were. Each rating was performed on a scale of 1 (not at all) to 7 (extremely). They were also asked whether 
+          the text featured offensive content (No/Yes). We also provide this subset for people to download.
+
         </p>
 
       
@@ -95,13 +108,14 @@
           </p>
           <p>
             <b>Human Evaluation: </b> For some qualities (e.g., empathy or social appropriateness), there are currently no automated metrics for evaluating dialogue generation
-            models. However, these qualities are particularly important for our data in our task. Therefore, we had human labelers code a large set (over 28,000) of images and
-            comments. During each Human Intelligence Task (HIT), we showed a labeler an image accompanied by a comment from a single thread associated with the image. As a 
-            single image can have multiple comment threads we randomly selected one comment thread for each image per HIT. A screenshot of the labeling task is shown in the image
-            below.The labeler was asked to rate how socially appropriate, empathetic, emotional, engaging and relevant to the image the comments were. Each rating was performed
-            on a scale of 1 (not at all) to 7 (extremely). They were also asked whether the text featured offensive content (No/Yes). In total, 28,392 image and comment samples 
-            were labeled. Each sample was labeled by one labeler, but due to the large number of samples we had a total of 180 labelers, each who labeled an average of 156 images. 
-            We compensated labelers at a calculated rate of $15 per hour. When users perform human evaluation, we suggest the same evluation method for fair comparison.
+            models. However, these qualities are particularly important for our data in our task. Therefore, we provide the subset (28,392 samples) with human annotations.
+            Users can use systems to generate comments on the subset and perform same human evaluation process. Then, users can compare the human evaluation results on gnerated
+            comments and the results of ground truth.
+            During each Human Intelligence Task (HIT), we showed a labeler an image accompanied by a comment from a single thread associated with the image. 
+            The labeler was asked to rate how socially appropriate, empathetic, emotional, engaging and relevant to the image
+            the comments were. Each rating was performed on a scale of 1 (not at all) to 7 (extremely). They were also asked whether 
+            the text featured offensive content (No/Yes). A screenshot of the labeling task is shown in the image
+            below. We compensated labelers at a calculated rate of $15 per hour. 
           </p>
           <p><center><img src="MturkTask.png" width="600" height="500" alt="Screenshot of the labeling task."></center></p>
           
