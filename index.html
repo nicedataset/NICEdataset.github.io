@@ -74,35 +74,55 @@
       <h3 id="Tasks">Task Definition</h3>
         <h4 id="Task1">Task Setting I</h4>
           <p>
-            <b>Task Formulation: </b> We define NICE-Setting I as text generation for an image. Formally, 
-           the generation task as follows: given an image I, and N comments C1, ..., Cn.
+           <b>Task Formulation: </b> We define NICE-Setting I as generating a set of comments for an image. Formally, 
+           the generation task as follows: given an image I, and N comments C<sub>1</sub>, ..., C<sub>n</sub>.
            Systems aim to generate the comment Ck, where k is from 1 to N using the current state
-           information S{I, C1,...,Ck-1}$. The state information contains input image feature
-           I$ and the comments history (C_1, ..., Ck-1).
+           information S(C<sub>k</sub> | I, C<sub>1</sub>,...,C<sub>k-1</sub>). 
           </p>
-          <p>
-            <b>Evaluation: </b>
-          </p>
+
         <h4 id="Task2">Task Setting II</h4>
           <p>
-            <b>Task Formulation: </b> We define the NICE-Setting II task as generating comments in response to an image, similar to a 
+           <b>Task Formulation: </b> We define the NICE-Setting II as controllable generation in response to an image, similar to a 
            dialog response in a social conversation setting in order to maximize user engagement and eventually form 
            long-term, emotional connections with users. We formalize the generation task as follows: each sample of 
            this dataset has an image I, a comment topic H of the whole dialogue, and N comments 
-           C1, ..., Cn with corresponding thread affect distribution features A1, ..., An. Systems aim to 
-           generate the comment Ck using the current state information {I, H, C1,...,Ck-1|Ak},
-           which contains the input image features $\mI_{image}$, comment topic H, and the comments history 
-           (C_1, ..., Ck-1), and is conditioned on the affect feature Ak.
+           C<sub>1</sub>, ..., C<sub>n</sub> with corresponding affect distribution features A<sub>1</sub>, ..., A<sub>n</sub>. 
+           Systems aim to generate the comment C<sub>k</sub> using the current state information 
+           S(I, H, C<sub>1</sub>,...,C<sub>k-1</sub>, A<sub>k</sub>), which contains the input image I, comment
+           topic H, the comments history (C<sub>1</sub>, ..., C<sub>k-1</sub>), and is conditioned on the affect feature A<sub>k</sub>.
+          </p>
+        
+        <h4 id="Evaluation">Evaluation</h4>
+          <p>
+            Generated comments can be evaluated automatically on three aspects: token matching, semantic similarity, and diversity. As image comments are 
+            different from traditional text generation task, generating same text as ground truth is not our goal. We propose three aspects to 
+            show the quality of generated comments. We also provide a evaluation set with over 28000 human annotated labels. We suggest users to refer them 
+            for human evaluation.
           </p>
           <p>
-            <b>Evaluation: </b>
+            <b>Token Matching: </b> Token matching aspect aims to evaluate whether the generated comments are similar as ground-truth comments on token level.
+            Token matching quality is evaluated by Bleu score, ROUGE score, and CIDEr score.
           </p>
+          <p>
+            <b>Semantic Similarity: </b> Semantic Similarity aims to evalute whether the generated comments have similar sematnic meanings or emotions. Semantic 
+            Similarity is evaluated by SPICE and BertScore (BertP, BertR, BertF1).
+          </p>
+          <p>
+            <b>Diversity: </b> Image comments can be diverse from different people's persepectives. Diversity is evaluted by Entropy and Distinct score.
+          </p>
+          <p>
+            <b>Human Evaluation: </b> For some qualities (e.g., empathy or social appropriateness), there are currently no automated metrics for evaluating dialogue generation
+            models. However, these qualities are particularly important for our data in our task. Therefore, we had human labelers code a large set (over 28,000) of images and
+            comments. During each Human Intelligence Task (HIT), we showed a labeler an image accompanied by a comment from a single thread associated with the image. As a 
+            single image can have multiple comment threads we randomly selected one comment thread for each image per HIT. A screenshot of the labeling task is shown in the image
+            below.The labeler was asked to rate how socially appropriate, empathetic, emotional, engaging and relevant to the image the comments were. Each rating was performed
+            on a scale of 1 (not at all) to 7 (extremely). They were also asked whether the text featured offensive content (No/Yes). In total, 28,392 image and comment samples 
+            were labeled. Each sample was labeled by one labeler, but due to the large number of samples we had a total of 180 labelers, each who labeled an average of 156 images. 
+            We compensated labelers at a calculated rate of $15 per hour. When users perform human evaluation, we suggest the same evluation method for fair comparison.
+          </p>
+          
       
       <h3 id="Publications">Publications</h3>
-        <p>
-          The paper for this dataset has been accepted by EMNLP 2021:
-          <a href="">EMNLP 2021 version</a>
-        </p>
         <p>
           The paper for this dataset has published in NeurIPS20 Human in the loop Dialogue systems:
           <a href="https://sites.google.com/view/hlds-2020/home">NeurIPS 2020 workshop version</a>
@@ -116,14 +136,13 @@
       
       <h3 id="DataDownload">NICE Dataset Download</h3>
         <p>
-          The NICE Dataset can be dowloaded with the link below. Because of copyright concerns, we only provide
-          public url links to images in the dataset. Users can acquire images by themselves. 
+          Microsoft Research has worked with legal teams on the data release process. Data downloading will come soon... 
         </p>
         <p>
-          You should complete an end user license agreement (EULA) before accessing the dataset. You can download the EULA from 
-          <a href="">here</a>.  
+          You should complete an end user license agreement (EULA) before accessing the dataset. The EULA will be posted soon
+          once the data releasing process is finished.
         </p>
-        <a href="" class="button">Download NICE Dataset</a>
+        <a href="" class="button">Download NICE Dataset (Data will be released soon.)</a>
       
       <h3 id="External">External Resources</h3>
         <p>
