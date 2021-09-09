@@ -56,7 +56,7 @@ h4 {
 }
 
 .sidenav {
-    margin-top: 200px;
+    margin-top: 400px;
     width: 140px;
     position: fixed;
     left: 0;
@@ -79,7 +79,7 @@ h4 {
 }
 
 .header {
-    margin-top: 140px;
+    margin-top: 200px;
     width: 75%;
     margin-left: 175px;
 }
