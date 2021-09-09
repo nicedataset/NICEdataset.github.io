@@ -46,10 +46,7 @@
           people's name, documents invoices, bills, financial reports) or other potentially offensive or 
           contentious material (including inappropriate references to violence, crime and illegal substances).
           After filtering, the number of images of the dataset was reduced to 2,233,926 samples and the number
-          of image-comment pairs was reduced to 7,304,680 samples. This filtering was performed with 
-          pre-trained classifiers. We believe that this dataset presents a valuable resource for the community.
-          Below we highlight some of the properties of the data. The NICE dataset consists of over 2M images, and 7M image-comment pairs (English) split
-          into training, validation, and testing sets. 
+          of image-comment pairs was reduced to 7,304,680 samples.
         </p>
 
       
@@ -112,26 +109,24 @@
         </p>
       
       <h3 id="ToolDownload">Data Collection Tools Download</h3>
-      
-         <p>
+        <p>
+          <b>Data Collection: </b> You can find the codes for data collection below: 
+        </p>
+        <p><a href="" class="button">Download Tools</a></p>
+        <p>
           <b>Data Cleaning: </b>  It took several researchers multiple weeks to remove sensitive content for both image
-          and text filtering. For example, we used the ``Microsoft Adult Filtering API'' to 
+          and text filtering. We used the ``Microsoft Adult Filtering API'' to 
           remove adult, racy and gory images, we use the ``Detecting image types API'' to remove
           clip art and line drawings, we use the ``Optical Character Recognition (OCR) API'' to remove
           printed or handwritten text from the images, such as photos of license plates or containers with serial
           numbers, as well as from documents invoices, bills, financial reports, articles, and more. We also removed
           people’s names, politically sensitive language, ethnic-religious content, or other potentially offensive
           material (including inappropriate references to violence, crime and illegal substances) as the similar
-          filter API for language cleaning. The last step of filtering, we make sure that NICE dataset had no more
+          filter API for language cleaning. In NICE-Setting II, we make sure that NICE dataset had no more
           than 5 corresponding comments for each image, and there are not more than 6 different dialogue threads 
-          for the same image. In NICE-Setting II, after annotation, we filter out image-comments pairs without affect
-          feature or dialogue topic from dialogue thread. We will keep cleaning and maintaining it in future.
+          for the same image. We also filter out image-comments pairs that do not have affect
+          features or dialogue topics from dialogue thread. We will keep cleaning and maintaining it in future.
         </p>
-      
-        <p>
-          You can find the codes for data collection. 
-        </p>
-        <a href="" class="button">Download Tools</a>
       
       <h3 id="EULA">User License Agreement (EULA)</h3>
         <p>
