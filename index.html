@@ -46,7 +46,11 @@
           people's name, documents invoices, bills, financial reports) or other potentially offensive or 
           contentious material (including inappropriate references to violence, crime and illegal substances).
           After filtering, the number of images of the dataset was reduced to 2,233,926 samples and the number
-          of image-comment pairs was reduced to 7,304,680 samples.
+          of image-comment pairs was reduced to 7,304,680 samples. In last step,  we only keep no more
+          than 5 corresponding comments in each thread, and no more than 6 different dialogue threads 
+          for the same image. We also filter out image-comments pairs that do not have affect
+          features or dialogue topics from dialogue thread. Finally, we have 6,550,526 training samples, 100,000 validation samples,
+          and 70,000 testing samples.
         </p>
 
       
@@ -122,10 +126,7 @@
           numbers, as well as from documents invoices, bills, financial reports, articles, and more. We also removed
           people’s names, politically sensitive language, ethnic-religious content, or other potentially offensive
           material (including inappropriate references to violence, crime and illegal substances) as the similar
-          filter API for language cleaning. In NICE-Setting II, we make sure that NICE dataset had no more
-          than 5 corresponding comments for each image, and there are not more than 6 different dialogue threads 
-          for the same image. We also filter out image-comments pairs that do not have affect
-          features or dialogue topics from dialogue thread. We will keep cleaning and maintaining it in future.
+          filter API for language cleaning. We will keep cleaning and maintaining it in future.
         </p>
       
       <h3 id="EULA">User License Agreement (EULA)</h3>
