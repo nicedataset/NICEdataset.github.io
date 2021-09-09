@@ -8,7 +8,7 @@
     <div class="topnav">
       <a href="index.html">NICE Dataset</a>
       <div class="topnav-right">
-        <img src="Microsoft-Research-logo.jpg"  width="160" height="90" alt="Microsoft Research">
+        <img src="Microsoft-Research-logo.jpg"  width="240" height="135" alt="Microsoft Research">
       </div>
     </div>
     <div class="header">
@@ -27,26 +27,19 @@
       <h1>NICE: Neural Image Commenting Evaluation with an Emphasis on Emotion and Empathy</h1>
       
       <h3 id="Introduction">Introduction</h3>
-        <p><center><img src="examples.png" width="600" height="150" alt="NICE Examples"></center></p>
+        <p><center><img src="examples.png" width="800" height="200" alt="NICE Examples"></center></p>
         <p>
           Emotion and empathy are examples of human qualities lacking in many human-machine 
-          interactions. The goal of our work is to generate engaging dialogue grounded in a 
-          user-shared image with increased emotion and empathy while minimizing socially 
-          inappropriate or offensive outputs. We release the Neural Image Commenting Evaluation 
+          interactions. We release the Neural Image Commenting Evaluation 
           (NICE) dataset consisting of almost two million images and their corresponding, 
           human-generated comments, as well as a set of baseline models and over 28,000 human 
-          annotated samples. Instead of relying on manually labeled emotions, we also use 
-          automatically generated linguistic representations as a source of weakly supervised 
-          labels. Based on the annotations, we define two different task settings on the NICE 
-          dataset. 
+          annotated samples. The goal of this dataset is to generate engaging dialogue grounded in a 
+          user-shared image with increased emotion and empathy while minimizing socially 
+          inappropriate or offensive outputs.
         </p>
       
         <p>
-          The NICE dataset consists of over 2M images, and 7M image-comment pairs (English) split
-          into training, validation, and testing sets. In this section, we first describe how the 
-          dataset was collected, and then present some of its unique characteristics. Our goal is
-          to simulate natural comments from humans, which requires a large volume of data. Therefore, 
-          we scraped 10 million image-comment pairs from licensed website. Each thread was required 
+          <b>Data Construction: </b> We scraped 10 million image-comment pairs from licensed website. Each thread was required 
           to start with an image and contain at least one comment. We applied filters to both the images 
           and comments to remove sensitive content such as adult or pornographic content, racy and gory 
           content, non-English language, ethnic-religious content, and some sensitive content (including 
@@ -55,22 +48,10 @@
           After filtering, the number of images of the dataset was reduced to 2,233,926 samples and the number
           of image-comment pairs was reduced to 7,304,680 samples. This filtering was performed with 
           pre-trained classifiers. We believe that this dataset presents a valuable resource for the community.
-          Below we highlight some of the properties of the data.
+          Below we highlight some of the properties of the data. The NICE dataset consists of over 2M images, and 7M image-comment pairs (English) split
+          into training, validation, and testing sets. 
         </p>
-        <p>
-          Data Cleaning: It took several researchers multiple weeks to remove sensitive content for both image
-          and text filtering. For example, we used the ``Microsoft Adult Filtering API'' to 
-          remove adult, racy and gory images, we use the ``Detecting image types API'' to remove
-          clip art and line drawings, we use the ``Optical Character Recognition (OCR) API'' to remove
-          printed or handwritten text from the images, such as photos of license plates or containers with serial
-          numbers, as well as from documents invoices, bills, financial reports, articles, and more. We also removed
-          people’s names, politically sensitive language, ethnic-religious content, or other potentially offensive
-          material (including inappropriate references to violence, crime and illegal substances) as the similar
-          filter API for language cleaning. The last step of filtering, we make sure that NICE dataset had no more
-          than 5 corresponding comments for each image, and there are not more than 6 different dialogue threads 
-          for the same image. In NICE-Setting II, after annotation, we filter out image-comments pairs without affect
-          feature or dialogue topic from dialogue thread. We will keep cleaning and maintaining it in future.
-        </p>
+
       
       <h3 id="Tasks">Task Definition</h3>
         <h4 id="Task1">Task Setting I</h4>
@@ -131,6 +112,22 @@
         </p>
       
       <h3 id="ToolDownload">Data Collection Tools Download</h3>
+      
+         <p>
+          <b>Data Cleaning: </b>  It took several researchers multiple weeks to remove sensitive content for both image
+          and text filtering. For example, we used the ``Microsoft Adult Filtering API'' to 
+          remove adult, racy and gory images, we use the ``Detecting image types API'' to remove
+          clip art and line drawings, we use the ``Optical Character Recognition (OCR) API'' to remove
+          printed or handwritten text from the images, such as photos of license plates or containers with serial
+          numbers, as well as from documents invoices, bills, financial reports, articles, and more. We also removed
+          people’s names, politically sensitive language, ethnic-religious content, or other potentially offensive
+          material (including inappropriate references to violence, crime and illegal substances) as the similar
+          filter API for language cleaning. The last step of filtering, we make sure that NICE dataset had no more
+          than 5 corresponding comments for each image, and there are not more than 6 different dialogue threads 
+          for the same image. In NICE-Setting II, after annotation, we filter out image-comments pairs without affect
+          feature or dialogue topic from dialogue thread. We will keep cleaning and maintaining it in future.
+        </p>
+      
         <p>
           You can find the codes for data collection. 
         </p>
