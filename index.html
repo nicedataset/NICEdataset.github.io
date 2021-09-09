@@ -18,14 +18,15 @@
     </div>
     <div class="sidenav">
       <h4>NICE</h4>
-      <a href="#Instrction">Instrction</a>
+      <a href="#Introduction">Introduction</a>
+      <a href="#Tasks">Task Definitions</a>
       <a href="#Publications">Publications</a>
       <a href="#ToolsDownload">Data Collection Tools</a>
       <a href="#DataDownload">Dataset Download</a>
       <a href="#External">External Resources</a>
     </div>
     <div class="main">
-      <h3 id="Instrction">Instrction</h3>
+      <h3 id="Introduction">Introduction</h3>
         <p>
           Emotion and empathy are examples of human qualities lacking in many human-machine 
           interactions. The goal of our work is to generate engaging dialogue grounded in a 
@@ -70,16 +71,21 @@
           feature or dialogue topic from dialogue thread. We will keep cleaning and maintaining it in future.
         </p>
       
-         <p>
-          Setting I: We define NICE-Setting I as text generation for an image. Formally, 
+      <h3 id="Tasks">Task Definition</h3>
+        <h4 id="Task1">Task Setting I</h4>
+          <p>
+            <b>Task Formulation: </b> We define NICE-Setting I as text generation for an image. Formally, 
            the generation task as follows: given an image I, and N comments C1, ..., Cn.
            Systems aim to generate the comment Ck, where k is from 1 to N using the current state
            information S{I, C1,...,Ck-1}$. The state information contains input image feature
            I$ and the comments history (C_1, ..., Ck-1).
-         </p>
-      
-         <p>
-          Setting II: We define the NICE-Setting II task as generating comments in response to an image, similar to a 
+          </p>
+          <p>
+            <b>Evaluation: </b>
+          </p>
+        <h4 id="Task2">Task Setting II</h4>
+          <p>
+            <b>Task Formulation: </b> We define the NICE-Setting II task as generating comments in response to an image, similar to a 
            dialog response in a social conversation setting in order to maximize user engagement and eventually form 
            long-term, emotional connections with users. We formalize the generation task as follows: each sample of 
            this dataset has an image I, a comment topic H of the whole dialogue, and N comments 
@@ -87,7 +93,11 @@
            generate the comment Ck using the current state information {I, H, C1,...,Ck-1|Ak},
            which contains the input image features $\mI_{image}$, comment topic H, and the comments history 
            (C_1, ..., Ck-1), and is conditioned on the affect feature Ak.
-         </p>
+          </p>
+          <p>
+            <b>Evaluation: </b>
+          </p>
+      
       <h3 id="Publications">Publications</h3>
         <p>
           The paper for this dataset has been accepted by EMNLP 2021:
@@ -97,11 +107,13 @@
           The paper for this dataset has published in NeurIPS20 Human in the loop Dialogue systems:
           <a href="https://sites.google.com/view/hlds-2020/home">NeurIPS 2020 workshop version</a>
         </p>
+      
       <h3 id="ToolsDownload">Download Data Collection Tools</h3>
         <p>
           The data collection and filtering tools can be downloaded with the link below. 
         </p>
         <a href="" class="button">Download Tools</a>
+      
       <h3 id="DataDownload">NICE Dataset Download</h3>
         <p>
           The NICE Dataset can be dowloaded with the link below. Because of copyright concerns, we only provide
@@ -112,6 +124,7 @@
           <a href="">here</a>.  
         </p>
         <a href="" class="button">Download NICE Dataset</a>
+      
       <h3 id="External">External Resources</h3>
         <p>
           External researches that use NICE dataset is listed below (The list will be update):
@@ -119,9 +132,6 @@
         <p>
           <a href="https://github.com/ckzbullbullet/NICE">https://github.com/ckzbullbullet/NICE</a>
         </p>
-      
-      
-      
         
     </div>
   </body>
