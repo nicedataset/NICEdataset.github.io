@@ -59,9 +59,12 @@
           <b>Human annotation subset: </b> We also ask human labelers to annotate a large set (over 28,000) of images and
           comments. This subset is provided to users for human evaluation.
           As a single image can have multiple comment threads we randomly selected one comment thread for each image per HIT.
-          In total, 28,392 image and comment samples were labeled. Each sample in the subset has human annotations including the
-          human rates on how socially appropriate, empathetic, emotional, engaging and relevant to the image
-          the comments were. Each rating was performed on a scale of 1 (not at all) to 7 (extremely). The labelers were also asked whether 
+          In total, 28,392 image and comment samples were labeled.
+          During each Human Intelligence Task (HIT), we showed a labeler an 
+          image accompanied by a comment from a single thread associated with the image. 
+          The labeler was asked to rate how socially appropriate, empathetic, emotional, engaging and relevant to the image
+          the comments were. Each rating was performed on a scale of 1 (not at all) to 7 (extremely). They were also asked whether 
+          the text featured offensive content (No/Yes). We compensated labelers at a calculated rate of $15 per hour. The labelers were also asked whether 
           the text featured offensive content (No/Yes). We also provide this subset for people to download. A screenshot of the 
           labeling task is shown in the image below.
         </p>
@@ -108,14 +111,10 @@
             <b>Diversity: </b> Image comments can be diverse from different people's persepectives. Diversity is evaluted by Entropy and Distinct score.
           </p>
           <p>
-            <b>Human Evaluation: </b> For some qualities (e.g., empathy or social appropriateness), there are currently no automated metrics for evaluating dialogue generation
-            models. However, these qualities are particularly important for our data in our task. Therefore, we provide the subset (28,392 samples) with human annotations.
-            Users can use systems to generate comments on the subset and perform same human evaluation process. Then, users can compare the human evaluation results on gnerated
-            comments and the results of ground truth.
-            During each Human Intelligence Task (HIT), we showed a labeler an image accompanied by a comment from a single thread associated with the image. 
-            The labeler was asked to rate how socially appropriate, empathetic, emotional, engaging and relevant to the image
-            the comments were. Each rating was performed on a scale of 1 (not at all) to 7 (extremely). They were also asked whether 
-            the text featured offensive content (No/Yes). We compensated labelers at a calculated rate of $15 per hour. 
+            <b>Human Evaluation: </b> For some qualities (e.g., empathy or social appropriateness), there are currently no automated metrics for 
+            evaluating dialogue generation models. However, these qualities are particularly important for our data in our task.
+            Users can use systems to generate comments on the subset and perform human evaluation process. Users can compare the generated
+            comments and the ground truth comments. 
           </p>
           
           
